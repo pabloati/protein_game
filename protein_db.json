@@ -1,0 +1,506 @@
+[
+    {
+        "name": "Proteína Fluorescente Verde (GFP)",
+        "organism": "Aequorea victoria (Medusa)",
+        "pdb_id": "1EMA",
+        "dna_sig": "GCTTCTAAAGGT",
+        "desc": "Una proteína que brilla en color verde brillante bajo luz UV.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Aequorea_victoria.jpg"
+    },
+    {
+        "name": "Hemoglobina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1A3N",
+        "dna_sig": "GTTCATTGTGAG",
+        "desc": "La proteína en tu sangre que transporta el oxígeno.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Luciferasa",
+        "organism": "Photinus pyralis (Luciérnaga)",
+        "pdb_id": "1LCI",
+        "dna_sig": "TTAATGTGTTTA",
+        "desc": "La enzima responsable de la bioluminiscencia en las luciérnagas.",
+        "image_url": "https://www.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/luciernagas/luciernaga.jpg"
+    },
+    {
+        "name": "Insulina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1TRZ",
+        "dna_sig": "ATTGTAGAGATT",
+        "desc": "Una hormona que regula la cantidad de glucosa en tu sangre.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Colágeno",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1BKV",
+        "dna_sig": "CCGATTGGCCCG",
+        "desc": "El 'pegamento' que mantiene tu piel y huesos unidos y fuertes.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Rubisco",
+        "organism": "Spinacia oleracea (Espinaca)",
+        "pdb_id": "8RUB",
+        "dna_sig": "ATGCGTACGATG",
+        "desc": "La proteína más abundante de la Tierra; convierte el aire en comida para las plantas.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Illustration_Spinacia_oleracea0.jpg"
+    },
+    {
+        "name": "Spidroína",
+        "organism": "Nephila clavipes (Araña de seda de oro)",
+        "pdb_id": "3LR2",
+        "dna_sig": "GGCTACTTAGGC",
+        "desc": "El componente principal de la tela de araña, ¡más fuerte que el acero!",
+        "image_url": "https://preview.redd.it/how-would-you-want-a-new-spider-man-show-to-happen-v0-ij8i3gjdicoe1.jpeg?auto=webp&s=86e21f68ceaea7dc0f9e4678cf855f2676dfcc96"
+    },
+    {
+        "name": "Taq Polimerasa",
+        "organism": "Thermus aquaticus (Bacteria termófila)",
+        "pdb_id": "1TAQ",
+        "dna_sig": "CGTAGCTAGCGT",
+        "desc": "Una proteína que vive en géiseres hirviendo y ayuda a los científicos a copiar ADN.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Thermus_aquaticus.JPG"
+    },
+    {
+        "name": "Cas9",
+        "organism": "Streptococcus pyogenes (Bacteria)",
+        "pdb_id": "4UN3",
+        "dna_sig": "AATTGGCCTAAT",
+        "desc": "Unas tijeras moleculares que pueden cortar y editar el ADN.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Streptococcus_pyogenes_01.jpg/960px-Streptococcus_pyogenes_01.jpg"
+    },
+    {
+        "name": "Proteína Anticongelante",
+        "organism": "Pseudopleuronectes americanus (Pez plano)",
+        "pdb_id": "1WFB",
+        "dna_sig": "TTACCGGAATTA",
+        "desc": "Evita que la sangre de este pez se congele en las aguas heladas del Ártico.",
+        "image_url": "https://images.reeflifesurvey.com/1/species_5c_66287b4ef0dab.w1000.h666.jpg"
+    },
+    {
+        "name": "Dsup (Supresor de Daño)",
+        "organism": "Ramazzottius varieornatus (Tardígrado)",
+        "pdb_id": "6C2P",
+        "dna_sig": "GGTTCACAAGGT",
+        "desc": "Un escudo invisible que protege al ADN de la radiación, incluso en el espacio.",
+        "image_url": "https://ichef.bbci.co.uk/ace/ws/624/amz/worldservice/live/assets/images/2011/05/17/110517114651_terdigrado_624x351_spl_nocredit.jpg.webp"
+    },
+    {
+        "name": "Queratina",
+        "organism": "Diceros bicornis (Rinoceronte)",
+        "pdb_id": "4ESX",
+        "dna_sig": "CCAAGTTGCCCA",
+        "desc": "La proteína dura que forma el cuerno del rinoceronte, tus uñas y tu pelo.",
+        "image_url": "https://content.nationalgeographic.com.es/medio/2020/03/26/diceros-bicornis_cbab792f_1280x853.jpg"
+    },
+    {
+        "name": "Miosina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1B7T",
+        "dna_sig": "ACTGACTGAACT",
+        "desc": "El motor microscópico que tira de tus fibras musculares para que puedas moverte.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Criptocromo",
+        "organism": "Erithacus rubecula (Petirrojo)",
+        "pdb_id": "1U3D",
+        "dna_sig": "TGCATGCATTGC",
+        "desc": "Funciona como una brújula en el ojo de los pájaros para ver el campo magnético de la Tierra.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Erithacus_rubecula_with_cocked_head.jpg/1280px-Erithacus_rubecula_with_cocked_head.jpg"
+    },
+    {
+        "name": "Rodopsina",
+        "organism": "Felis catus (Gato)",
+        "pdb_id": "1U19",
+        "dna_sig": "GCGATGTCTGTG",
+        "desc": "Un sensor de luz súper sensible que permite a los gatos ver en la oscuridad.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/640px-Cat03.jpg"
+    },
+    {
+        "name": "Caseína",
+        "organism": "Bos taurus (Vaca)",
+        "pdb_id": "1BEH",
+        "dna_sig": "CCCTTAGGGCCC",
+        "desc": "La proteína principal de la leche, esencial para hacer queso.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Cow_female_black_white.jpg/640px-Cow_female_black_white.jpg"
+    },
+    {
+        "name": "Amilasa",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1SMD",
+        "dna_sig": "TATATGCGCTAT",
+        "desc": "Vive en tu saliva y comienza a digerir tu sándwich antes de que te lo tragues.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Fibrinógeno",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "3GHG",
+        "dna_sig": "GATCGATCGATC",
+        "desc": "Patrulla tu sangre esperando una herida para convertirse en una costra protectora.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Bacteriorrodopsina",
+        "organism": "Halobacterium salinarum (Arquea)",
+        "pdb_id": "1C3W",
+        "dna_sig": "ATATATCGATAT",
+        "desc": "Una bomba de protones púrpura que vive en lagos súper salados y usa luz solar.",
+        "image_url": "https://www.researchgate.net/profile/Stefania-Deak/publication/318588697/figure/fig2/AS:631676187181087@1527614747643/Halobacterium-salinarum.png"
+    },
+    {
+        "name": "Titina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1TIT",
+        "dna_sig": "GCGCGCGCGGCG",
+        "desc": "La proteína más grande conocida; actúa como un resorte gigante en tus músculos.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Histona",
+        "organism": "Eukaryota (Todos los animales/plantas)",
+        "pdb_id": "1AOI",
+        "dna_sig": "TTCGAAGCTTTC",
+        "desc": "Carretes microscópicos alrededor de los cuales se enrolla el ADN para que quepa en la célula.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Eukaryota_diversity_2.jpg"
+    },
+    {
+        "name": "Lactoferrina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1B0L",
+        "dna_sig": "AAAGGGCCCAAA",
+        "desc": "Una proteína en la leche materna que roba hierro a las bacterias malas para que no crezcan.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Sincitina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "5B46",
+        "dna_sig": "GCTAGCTAGGCT",
+        "desc": "Originalmente de un virus antiguo, ahora ayuda a formar la placenta en los bebés.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Zezina (Zeína)",
+        "organism": "Zea mays (Maíz)",
+        "pdb_id": "2M67",
+        "dna_sig": "TTTGGCAAATTT",
+        "desc": "La proteína principal del maíz, usada para hacer plásticos biodegradables.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Zea_mays_Blanco2.279.png/960px-Zea_mays_Blanco2.279.png"
+    },
+    {
+        "name": "Kinesina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "4HNA",
+        "dna_sig": "CCGGTTAACCCG",
+        "desc": "Un robot caminante que transporta cargas gigantescas paso a paso dentro de tus células.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Hemocianina",
+        "organism": "Octopus vulgaris (Pulpo)",
+        "pdb_id": "1JS8",
+        "dna_sig": "TTAGGCTTGTTA",
+        "desc": "Usa cobre en lugar de hierro, haciendo que la sangre de los pulpos sea de color azul.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/1280px-Octopus2.jpg"
+    },
+    {
+        "name": "Ubiquitina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1UBQ",
+        "dna_sig": "GGCAATTGGGGC",
+        "desc": "La 'etiqueta de la muerte': marca a las proteínas viejas o rotas para ser recicladas.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Brazzeína",
+        "organism": "Pentadiplandra brazzeana (Planta Oubli)",
+        "pdb_id": "1BRZ",
+        "dna_sig": "AAATTTCCCAAA",
+        "desc": "Una proteína africana que es 500 veces más dulce que el azúcar.",
+        "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52089679/medium.jpg"
+    },
+    {
+        "name": "Sonic Hedgehog",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1VHH",
+        "dna_sig": "CGTACGTAGCGT",
+        "desc": "Llamada así por el videojuego, esta proteína instruye a tus dedos para crecer en el lugar correcto.",
+        "image_url": "https://static.wikia.nocookie.net/sonic/images/1/10/SRCSonic.png/revision/latest/scale-to-width-down/1000?cb=20250228190417&path-prefix=es"
+    },
+    {
+        "name": "Pikachurina",
+        "organism": "Mus musculus (Ratón)",
+        "pdb_id": "7ZC9",
+        "dna_sig": "CCGATATTCCCG",
+        "desc": "Ayuda a tus ojos a transmitir señales eléctricas al cerebro a la velocidad del rayo.",
+        "image_url": "https://i.ebayimg.com/images/g/xLkAAOSwJGlgWOAB/s-l1600.webp"
+    },
+    {
+        "name": "Lisozima",
+        "organism": "Gallus gallus (Pollo)",
+        "pdb_id": "1HEW",
+        "dna_sig": "CCTTGGAACCCT",
+        "desc": "Un antibiótico natural en tus lágrimas y en el huevo que hace explotar a las bacterias.",
+        "image_url": "https://hawaiibirdingtrails.hawaii.gov/wp-content/uploads/Red-Junglefowl_Sherman-Wing-1024x1024.jpg"
+    },
+    {
+        "name": "Catalasa",
+        "organism": "Bos taurus (Vaca)",
+        "pdb_id": "1DGB",
+        "dna_sig": "GCTAGCTAAGCT",
+        "desc": "Protege tus células convirtiendo el agua oxigenada tóxica en agua y burbujas de oxígeno.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/CowFace.jpg/1280px-CowFace.jpg"
+    },
+    {
+        "name": "Hirudina",
+        "organism": "Hirudo medicinalis (Sanguijuela)",
+        "pdb_id": "4HTC",
+        "dna_sig": "TTTGGCAATTTT",
+        "desc": "Un potente anticoagulante que usan las sanguijuelas para beber sangre sin que se formen costras.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Leech_in_water.jpg/960px-Leech_in_water.jpg"
+    },
+    {
+        "name": "p53",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1TUP",
+        "dna_sig": "GGGGCCCCTGGG",
+        "desc": "El 'Guardián del Genoma': detiene la división celular si detecta que el ADN está dañado.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Inmunoglobulina G (IgG)",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1IGT",
+        "dna_sig": "AGCTAGCTAAGC",
+        "desc": "Anticuerpos en forma de 'Y' que patrullan tu cuerpo buscando y marcando virus.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Oxitocina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1XY1",
+        "dna_sig": "TGCATGCAGTGC",
+        "desc": "La 'hormona del abrazo'; un pequeño péptido que ayuda a los humanos a confiar y quererse.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Gliadina (Gluten)",
+        "organism": "Triticum aestivum (Trigo)",
+        "pdb_id": "1S9V",
+        "dna_sig": "AAAGGGTTTAAA",
+        "desc": "La proteína elástica que hace que el pan sea esponjoso (pero causa problemas a los celíacos).",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gliadin.png"
+    },
+    {
+        "name": "Ovoalbúmina",
+        "organism": "Gallus gallus (Pollo)",
+        "pdb_id": "1OVA",
+        "dna_sig": "CCTAGGAATCCT",
+        "desc": "La principal proteína de la clara de huevo, usada para almacenar nutrientes para el pollito.",
+        "image_url": "https://hawaiibirdingtrails.hawaii.gov/wp-content/uploads/Red-Junglefowl_Sherman-Wing-1024x1024.jpg"
+    },
+    {
+        "name": "Tirosinasa",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "5M8M",
+        "dna_sig": "TATAATGCCTAT",
+        "desc": "La enzima que produce melanina, dándole color oscuro a tu piel, pelo y ojos.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Conotoxina",
+        "organism": "Conus magus (Caracol cono)",
+        "pdb_id": "1OME",
+        "dna_sig": "CCCTTTGGGCCC",
+        "desc": "Un veneno mortal de caracol marino que, en pequeñas dosis, es un potente analgésico.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Vehn%C3%A4pelto_6.jpg/250px-Vehn%C3%A4pelto_6.jpg"
+    },
+    {
+        "name": "Ferritina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1FHA",
+        "dna_sig": "GGAACTAGCGGA",
+        "desc": "Una jaula esférica hueca que almacena hierro de forma segura dentro de tus células.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Actina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "1J6Z",
+        "dna_sig": "ACGTACGTAACG",
+        "desc": "Se une para formar largos filamentos que crean el esqueleto interno de tus células.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Acuaporina",
+        "organism": "Homo sapiens (Humano)",
+        "pdb_id": "3GD8",
+        "dna_sig": "TTTCCCAGATTT",
+        "desc": "Un túnel exclusivo y súper rápido que permite que solo el agua cruce las paredes celulares.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
+    },
+    {
+        "name": "Mioglobina",
+        "organism": "Physeter macrocephalus (Cachalote)",
+        "pdb_id": "1MBN",
+        "dna_sig": "CGATGATTGAAT",
+        "desc": "Permite a las ballenas contener la respiración durante mucho tiempo almacenando oxígeno en los músculos.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Mother_and_baby_sperm_whale.jpg/1920px-Mother_and_baby_sperm_whale.jpg"
+    },
+    {
+        "name": "Alcohol Deshidrogenasa",
+        "organism": "Saccharomyces cerevisiae (Levadura)",
+        "pdb_id": "1ADC",
+        "dna_sig": "GTGATTTGGTGA",
+        "desc": "La enzima responsable de la fermentación que crea el alcohol en la cerveza y el vino.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Saccharomyces_cerevisiae_SEM.jpg/250px-Saccharomyces_cerevisiae_SEM.jpg"
+    },
+    {
+        "name": "Toxina Botulínica",
+        "organism": "Clostridium botulinum (Bacteria)",
+        "pdb_id": "3BTA",
+        "dna_sig": "GCTCTATCGCTG",
+        "desc": "La sustancia más tóxica conocida, pero usada en dosis diminutas como Botox para relajar arrugas.",
+        "image_url": "https://www.conasi.eu/blog/wp-content/uploads/2018/03/bacterias-blog-900x600.jpg"
+    },
+    {
+        "name": "Estreptavidina",
+        "organism": "Streptomyces avidinii (Bacteria)",
+        "pdb_id": "1STP",
+        "dna_sig": "GATATCGGTCAG",
+        "desc": "Se une a la biotina con una fuerza increíble; se usa como un 'superpegamento' en biotecnología.",
+        "image_url": "https://www.creative-diagnostics.com/upload/image/Streptomyces-avidinii-Antigen.png"
+    },
+    {
+        "name": "Ricina",
+        "organism": "Ricinus communis (Ricino)",
+        "pdb_id": "2AAI",
+        "dna_sig": "AGCGCATTATCG",
+        "desc": "Una potente toxina vegetal que inactiva los ribosomas, deteniendo la fabricación de proteínas.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Ricinus_March_2010-1.jpg/960px-Ricinus_March_2010-1.jpg"
+    },
+    {
+        "name": "Melitina",
+        "organism": "Apis mellifera (Abeja melífera)",
+        "pdb_id": "2MLT",
+        "dna_sig": "CGGTCTGACCTT",
+        "desc": "El componente principal del veneno de abeja que causa el dolor y la inflamación de la picadura.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Apis_mellifera_-_Brassica_napus_-_Valingu.jpg/1280px-Apis_mellifera_-_Brassica_napus_-_Valingu.jpg"
+    },
+    {
+        "name": "Tripsina",
+        "organism": "Sus scrofa (Cerdo)",
+        "pdb_id": "1UTN",
+        "dna_sig": "TGCGAAGCAGGT",
+        "desc": "Una enzima digestiva fuerte que rompe proteínas en el intestino delgado.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Pig_farm_Vampula_9.jpg/1280px-Pig_farm_Vampula_9.jpg"
+    },
+    {
+        "name": "Citocromo c",
+        "organism": "Equus caballus (Caballo)",
+        "pdb_id": "1HRC",
+        "dna_sig": "CTATGAGCTAAT",
+        "desc": "Esencial para la producción de energía celular; es tan vital que apenas ha cambiado en la evolución.",
+        "image_url": "https://concepto.de/wp-content/uploads/2021/07/caballos-e1626738224231.jpg"
+    },
+    {
+        "name": "Papaína",
+        "organism": "Carica papaya (Papaya)",
+        "pdb_id": "9PAP",
+        "dna_sig": "GGAAGCGATACA",
+        "desc": "Una enzima que digiere proteínas, usada comúnmente en la cocina para ablandar la carne.",
+        "image_url": "https://cdn1.healthians.com/blog/wp-content/uploads/2025/12/Papaya-Benefits-950x500.webp"
+    },
+    {
+        "name": "GroEL (Chaperonina)",
+        "organism": "Escherichia coli (Bacteria)",
+        "pdb_id": "1XCK",
+        "dna_sig": "CACTATTGTGAA",
+        "desc": "Una 'jaula' molecular que ayuda a otras proteínas recién nacidas a plegarse correctamente.",
+        "image_url": "https://www.cdc.gov/ecoli/media/images/2024/04/ecoli_16.9-ratio.jpg"
+    },
+    {
+        "name": "Calmodulina",
+        "organism": "Rattus norvegicus (Rata)",
+        "pdb_id": "3CLN",
+        "dna_sig": "GTACCATTTGGC",
+        "desc": "Detecta los niveles de calcio en la célula y activa otras proteínas en respuesta.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Rattus_norvegicus_1.jpg"
+    },
+    {
+        "name": "Ficocianina",
+        "organism": "Arthrospira platensis (Espirulina)",
+        "pdb_id": "1CPC",
+        "dna_sig": "TGTAGCGATGCG",
+        "desc": "Un pigmento azul brillante usado por las cianobacterias para capturar luz para la fotosíntesis.",
+        "image_url": "https://www.enelgreenpower.com/content/dam/enel-egp/immagini/articoli/news/Alga-spirulina-2400x1160.jpg"
+    },
+    {
+        "name": "Draculina",
+        "organism": "Desmodus rotundus (Murciélago Vampiro)",
+        "pdb_id": "1DCL",
+        "dna_sig": "GTTACTGATTTA",
+        "desc": "Un potente anticoagulante en la saliva del vampiro que mantiene la sangre de la presa fluyendo.",
+        "image_url": "https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7902/production/_130187903_gettyimages-1048242406.jpg.webp"
+    },
+    {
+        "name": "Alfa-Latrotoxina",
+        "organism": "Latrodectus mactans (Viuda Negra)",
+        "pdb_id": "1LTC",
+        "dna_sig": "AGACTATATATC",
+        "desc": "Ataca los nervios causando espasmos musculares masivos tras la mordedura de la araña.",
+        "image_url": "https://content.nationalgeographic.com.es/medio/2025/07/23/2263600x450_00000000_5784a36c_250723125358_1280x740.webp"
+    },
+    {
+        "name": "Trombina",
+        "organism": "Bos taurus (Vaca)",
+        "pdb_id": "1HAG",
+        "dna_sig": "CCAGCATACCAT",
+        "desc": "El director de la coagulación; convierte el fibrinógeno líquido en fibrina sólida.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/CowFace.jpg/1280px-CowFace.jpg"
+    },
+    {
+        "name": "Glucagón",
+        "organism": "Sus scrofa (Cerdo)",
+        "pdb_id": "1GCN",
+        "dna_sig": "TACGACCAGGAG",
+        "desc": "Hace lo contrario a la insulina: le dice al hígado que libere azúcar cuando tienes hambre.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Pig_farm_Vampula_9.jpg/1280px-Pig_farm_Vampula_9.jpg"
+    },
+    {
+        "name": "Ureasa",
+        "organism": "Canavalia ensiformis (Haba Jack)",
+        "pdb_id": "3LA4",
+        "dna_sig": "GTCGTACATTAA",
+        "desc": "La primera enzima cristalizada en la historia (Premio Nobel 1946); descompone la urea.",
+        "image_url": "https://res.cloudinary.com/dyrthfhgv/image/upload/f_auto,q_auto/v1745412392/plants/8875.jpg"
+    },
+    {
+        "name": "Bombyxina",
+        "organism": "Bombyx mori (Gusano de seda)",
+        "pdb_id": "1BMX",
+        "dna_sig": "CGTGCTACGACG",
+        "desc": "Una hormona cerebral que controla la metamorfosis de la polilla de seda.",
+        "image_url": "https://www.leps.it/images/Bombycidae/BoMoA001HR.jpg"
+    },
+    {
+        "name": "Concanavalina A",
+        "organism": "Canavalia ensiformis (Haba Jack)",
+        "pdb_id": "1CVA",
+        "dna_sig": "ATCGAACAGAAG",
+        "desc": "Una lectina que se une a carbohidratos específicos; usada para estudiar la superficie celular.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Canavalia_ensiformis_SV.jpg"
+    },
+    {
+        "name": "Vimentina",
+        "organism": "Cricetulus griseus (Hámster chino)",
+        "pdb_id": "1GK4",
+        "dna_sig": "TAGCTATACCAC",
+        "desc": "Forma parte del citoesqueleto, dando soporte estructural y anclando los orgánulos.",
+        "image_url": "https://zoogalaxy.net/assets/images/mammalia/rodentia/cricetulus-griseus/small/cricetulus-griseus_small_01.jpg"
+    }
+]

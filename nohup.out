@@ -1,0 +1,32 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501/proteinas
+  Network URL: http://147.156.158.31:8501/proteinas
+  External URL: http://147.156.158.31:8501/proteinas
+
+  Stopping...
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501/proteinas
+  Network URL: http://147.156.158.31:8501/proteinas
+  External URL: http://147.156.158.31:8501/proteinas
+
+/home/patienza/proteinas/lib/python3.12/site-packages/Bio/pairwise2.py:278: BiopythonDeprecationWarning: Bio.pairwise2 has been deprecated, and we intend to remove it in a future release of Biopython. As an alternative, please consider using Bio.Align.PairwiseAligner as a replacement, and contact the Biopython developers if you still need the Bio.pairwise2 module.
+  warnings.warn(
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+2026-03-04 15:40:43.966 Port 8501 is not available
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+2026-03-04 15:40:59.089 Port 8501 is not available
+  Stopping...

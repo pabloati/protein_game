@@ -1,0 +1,12 @@
+name: divulgacion
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - pip:
+    - streamlit
+    - biopython
+    - stmol
+    - py3Dmol
+prefix: /home/pabloati/miniforge3/envs/divulgacion
