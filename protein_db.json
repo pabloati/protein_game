@@ -83,7 +83,7 @@
         "name": "Dsup (Supresor de Daño)",
         "organism": "Ramazzottius varieornatus (Tardígrado)",
         "pdb_id": "6DTA",
-        "dna_sig": "TCTGCTCGTTTAATTTAGAGGGCT",
+        "dna_sig": "TCTGCTCGCGACATTTAGAGGGCT",
         "desc": "Un escudo invisible que protege al ADN de la radiación, incluso en el espacio.",
         "image_url": "https://ichef.bbci.co.uk/ace/ws/624/amz/worldservice/live/assets/images/2011/05/17/110517114651_terdigrado_624x351_spl_nocredit.jpg.webp"
     },
