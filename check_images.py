@@ -51,7 +51,7 @@ def check_images(mode="both"):
                     image_url = image_url[0]
                 try:
                     # We use a user-agent because some wikimedia or other sites block simple python requests
-                    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+                    headers = {'User-Agent': 'ProteinFinder/1.0 (contact:pablo.atienza@csic.es) python-requests'}
                     resp = requests.get(image_url, headers=headers, timeout=10)
                     resp.raise_for_status()
                 except Exception as e:

@@ -123,7 +123,7 @@
         "name": "Caseína",
         "organism": "Bos taurus (Vaca)",
         "pdb_id": "1BEH",
-        "dna_sig": "CCCTCAGGGCCCCTCTCTATACGT",
+        "dna_sig": "GCTAATGCTTGCGAGAATGAGTCTG",
         "desc": "La proteína principal de la leche, esencial para hacer queso.",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Cow_female_black_white.jpg/640px-Cow_female_black_white.jpg"
     },
@@ -142,14 +142,6 @@
         "dna_sig": "GATCGATCGAACGAGAATCGTTCT",
         "desc": "Patrulla tu sangre esperando una herida para convertirse en una costra protectora.",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
-    },
-    {
-        "name": "Bacteriorrodopsina",
-        "organism": "Halobacterium salinarum (Arquea)",
-        "pdb_id": "1C3W",
-        "dna_sig": "ATGGCTCGTACTTCTGAGATTTCT",
-        "desc": "Una bomba de protones púrpura que vive en lagos súper salados y usa luz solar.",
-        "image_url": "https://www.researchgate.net/profile/Stefania-Deak/publication/318588697/figure/fig2/AS:631676187181087@1527614747643/Halobacterium-salinarum.png"
     },
     {
         "name": "Titina",
@@ -486,14 +478,6 @@
         "dna_sig": "CGTGCTACGACGGACGAGCGTCGG",
         "desc": "Una hormona cerebral que controla la metamorfosis de la polilla de seda.",
         "image_url": "https://www.leps.it/images/Bombycidae/BoMoA001HR.jpg"
-    },
-    {
-        "name": "Concanavalina A",
-        "organism": "Canavalia ensiformis (Haba Jack)",
-        "pdb_id": "1CVA",
-        "dna_sig": "ATCGAACAGAAGTGAGCATCGGTA",
-        "desc": "Una lectina que se une a carbohidratos específicos; usada para estudiar la superficie celular.",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Canavalia_ensiformis_SV.jpg"
     },
     {
         "name": "Vimentina",

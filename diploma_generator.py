@@ -174,7 +174,8 @@ def create_diploma_pdf(user_name, user_dna, match_data):
             img_url = img_url[0]
             
         try:
-            resp = requests.get(img_url, timeout=5)
+            headers = {'User-Agent': 'ProteinFinder/1.0 (contact:pablo.atienza@csic.es) python-requests'}
+            resp = requests.get(img_url, headers=headers, timeout=10)
             resp.raise_for_status()
             with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp_file:
                 tmp_file.write(resp.content)

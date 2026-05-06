@@ -347,7 +347,11 @@ with col2:
 
                         # Use a spinner to indicate loading
                         with st.spinner(f"Cargando imagen de {match['organism']}..."):
-                            st.image(img_to_show, caption=match['organism'], width="stretch")
+                            import requests
+                            headers = {'User-Agent': 'ProteinFinder/1.0 (contact:pablo.atienza@csic.es) python-requests'}
+                            img_resp = requests.get(img_to_show, headers=headers, timeout=10)
+                            img_resp.raise_for_status()
+                            st.image(img_resp.content, caption=match['organism'], width="stretch")
                     except Exception as e:
                         st.error(f"No se pudo cargar la imagen. (Error: {str(e)})")
                         st.info(f"Puedes verla aquí: [Enlace]({(match['image_url'][0] if isinstance(match['image_url'], list) else match['image_url'])})")
