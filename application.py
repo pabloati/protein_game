@@ -7,6 +7,7 @@ import random
 import hashlib
 import json
 import os
+from diploma_generator import create_diploma_pdf
 
 # -----------------------------------------------------------------------------
 # 1. CONFIGURATION & ASSETS
@@ -68,7 +69,8 @@ st.markdown("""
     }
 
     /* Buttons - Teal with White Text */
-    div.stButton > button {
+    div.stButton > button, 
+    div.stDownloadButton > button {
         background-color: #008080;
         color: #FFFFFF !important;
         border: 2px solid #008080;
@@ -81,22 +83,23 @@ st.markdown("""
         width: 100%;
     }
     
-    div.stButton > button:hover {
+    div.stButton > button:hover, 
+    div.stDownloadButton > button:hover {
         background-color: #FDFBF7;
         color: #008080 !important;
         border: 2px solid #008080;
     }
 
     /* Force white text on all inner elements of buttons (overrides global p/span/div rule) */
-    div.stButton > button p,
-    div.stButton > button span,
-    div.stButton > button div {
+    div.stButton > button p, div.stDownloadButton > button p,
+    div.stButton > button span, div.stDownloadButton > button span,
+    div.stButton > button div, div.stDownloadButton > button div {
         color: #FFFFFF !important;
     }
 
-    div.stButton > button:hover p,
-    div.stButton > button:hover span,
-    div.stButton > button:hover div {
+    div.stButton > button:hover p, div.stDownloadButton > button:hover p,
+    div.stButton > button:hover span, div.stDownloadButton > button:hover span,
+    div.stButton > button:hover div, div.stDownloadButton > button:hover div {
         color: #008080 !important;
     }
 
@@ -354,6 +357,32 @@ with col2:
     else:
         # Placeholder before search
         st.info("← Introduce tu nombre para generar tu secuencia de ADN y escanear la base de datos.")
+
+# --- STEP 3: GENERATE DIPLOMA (BOTTOM MIDDLE) ---
+if st.session_state.get('search_done'):
+    st.write("---")
+    
+    # Use three columns to center the button in the middle column
+    dip_col1, dip_col2, dip_col3 = st.columns([1, 2, 1])
+    with dip_col2:
+        st.markdown("<h3 style='text-align: center;'>🎓 Llévate tu recuerdo</h3>", unsafe_allow_html=True)
+        
+        # When generating files for download in Streamlit, we must pre-generate the bytes, 
+        # or generate them via a quick callback. st.download_button handles this easily.
+        with st.spinner("Preparando diploma..."):
+            pdf_data = create_diploma_pdf(
+                user_name=name_input, 
+                user_dna=st.session_state['dna'], 
+                match_data=st.session_state['match']
+            )
+            
+        st.download_button(
+            label="Generar diploma (Descargar PDF)",
+            data=pdf_data,
+            file_name=f"Diploma_{name_input.replace(' ', '_')}.pdf",
+            mime="application/pdf",
+            use_container_width=True
+        )
 
 # -----------------------------------------------------------------------------
 # 4. DEBUG LOG

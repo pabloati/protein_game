@@ -2,3 +2,5 @@ biopython==1.86
 py3Dmol==2.5.3
 stmol==0.0.9
 streamlit==1.53.0
+fpdf2
+requests
