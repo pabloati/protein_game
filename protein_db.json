@@ -3,7 +3,7 @@
         "name": "Proteína Fluorescente Verde (GFP)",
         "organism": "Aequorea victoria (Medusa)",
         "pdb_id": "1EMA",
-        "dna_sig": "GCTTCTAAAGGT",
+        "dna_sig": "ATGGCTCGTATT",
         "desc": "Una proteína que brilla en color verde brillante bajo luz UV.",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Aequorea_victoria.jpg"
     },
@@ -19,7 +19,7 @@
         "name": "Luciferasa",
         "organism": "Photinus pyralis (Luciérnaga)",
         "pdb_id": "1LCI",
-        "dna_sig": "TTAATGTGTTTA",
+        "dna_sig": "TTATGAATTTCT",
         "desc": "La enzima responsable de la bioluminiscencia en las luciérnagas.",
         "image_url": "https://www.museocostarica.go.cr/wp-content/uploads/articulos_educativos/historia_natural/luciernagas/luciernaga.jpg"
     },
@@ -43,7 +43,7 @@
         "name": "Rubisco",
         "organism": "Spinacia oleracea (Espinaca)",
         "pdb_id": "8RUB",
-        "dna_sig": "ATGCGTACGATG",
+        "dna_sig": "CTATAGTCTGAG",
         "desc": "La proteína más abundante de la Tierra; convierte el aire en comida para las plantas.",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Illustration_Spinacia_oleracea0.jpg"
     },
@@ -51,7 +51,7 @@
         "name": "Spidroína",
         "organism": "Nephila clavipes (Araña de seda de oro)",
         "pdb_id": "3LR2",
-        "dna_sig": "GGCTACTTAGGC",
+        "dna_sig": "CTGCTGATTTA",
         "desc": "El componente principal de la tela de araña, ¡más fuerte que el acero!",
         "image_url": "https://preview.redd.it/how-would-you-want-a-new-spider-man-show-to-happen-v0-ij8i3gjdicoe1.jpeg?auto=webp&s=86e21f68ceaea7dc0f9e4678cf855f2676dfcc96"
     },
@@ -59,7 +59,7 @@
         "name": "Taq Polimerasa",
         "organism": "Thermus aquaticus (Bacteria termófila)",
         "pdb_id": "1TAQ",
-        "dna_sig": "CGTAGCTAGCGT",
+        "dna_sig": "TTAGCTTGACGT",
         "desc": "Una proteína que vive en géiseres hirviendo y ayuda a los científicos a copiar ADN.",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Thermus_aquaticus.JPG"
     },
@@ -67,7 +67,7 @@
         "name": "Cas9",
         "organism": "Streptococcus pyogenes (Bacteria)",
         "pdb_id": "4UN3",
-        "dna_sig": "AATTGGCCTAAT",
+        "dna_sig": "GCTTTAGAGGAA",
         "desc": "Unas tijeras moleculares que pueden cortar y editar el ADN.",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Streptococcus_pyogenes_01.jpg/960px-Streptococcus_pyogenes_01.jpg"
     },
@@ -83,7 +83,7 @@
         "name": "Dsup (Supresor de Daño)",
         "organism": "Ramazzottius varieornatus (Tardígrado)",
         "pdb_id": "6C2P",
-        "dna_sig": "GGTTCACAAGGT",
+        "dna_sig": "TGTGCTCGTTTA",
         "desc": "Un escudo invisible que protege al ADN de la radiación, incluso en el espacio.",
         "image_url": "https://ichef.bbci.co.uk/ace/ws/624/amz/worldservice/live/assets/images/2011/05/17/110517114651_terdigrado_624x351_spl_nocredit.jpg.webp"
     },
@@ -91,7 +91,7 @@
         "name": "Queratina",
         "organism": "Diceros bicornis (Rinoceronte)",
         "pdb_id": "4ESX",
-        "dna_sig": "CCAAGTTGCCCA",
+        "dna_sig": "TCTGCTCGTGCT",
         "desc": "La proteína dura que forma el cuerno del rinoceronte, tus uñas y tu pelo.",
         "image_url": "https://content.nationalgeographic.com.es/medio/2020/03/26/diceros-bicornis_cbab792f_1280x853.jpg"
     },
@@ -99,7 +99,7 @@
         "name": "Miosina",
         "organism": "Homo sapiens (Humano)",
         "pdb_id": "1B7T",
-        "dna_sig": "ACTGACTGAACT",
+        "dna_sig": "ACCGCTGTTATT",
         "desc": "El motor microscópico que tira de tus fibras musculares para que puedas moverte.",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg"
     },
@@ -107,7 +107,7 @@
         "name": "Criptocromo",
         "organism": "Erithacus rubecula (Petirrojo)",
         "pdb_id": "1U3D",
-        "dna_sig": "TGCATGCATTGC",
+        "dna_sig": "ATGATTGGTTGA",
         "desc": "Funciona como una brújula en el ojo de los pájaros para ver el campo magnético de la Tierra.",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Erithacus_rubecula_with_cocked_head.jpg/1280px-Erithacus_rubecula_with_cocked_head.jpg"
     },
@@ -147,7 +147,7 @@
         "name": "Bacteriorrodopsina",
         "organism": "Halobacterium salinarum (Arquea)",
         "pdb_id": "1C3W",
-        "dna_sig": "ATATATCGATAT",
+        "dna_sig": "ATGGCTCGTACT",
         "desc": "Una bomba de protones púrpura que vive en lagos súper salados y usa luz solar.",
         "image_url": "https://www.researchgate.net/profile/Stefania-Deak/publication/318588697/figure/fig2/AS:631676187181087@1527614747643/Halobacterium-salinarum.png"
     },
@@ -203,7 +203,7 @@
         "name": "Hemocianina",
         "organism": "Octopus vulgaris (Pulpo)",
         "pdb_id": "1JS8",
-        "dna_sig": "TTAGGCTTGTTA",
+        "dna_sig": "CTATGAGCTAAT",
         "desc": "Usa cobre en lugar de hierro, haciendo que la sangre de los pulpos sea de color azul.",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/1280px-Octopus2.jpg"
     },
@@ -227,7 +227,7 @@
         "name": "Sonic Hedgehog",
         "organism": "Homo sapiens (Humano)",
         "pdb_id": "1VHH",
-        "dna_sig": "CGTACGTAGCGT",
+        "dna_sig": "ACCGCTAATATT",
         "desc": "Llamada así por el videojuego, esta proteína instruye a tus dedos para crecer en el lugar correcto.",
         "image_url": "https://static.wikia.nocookie.net/sonic/images/1/10/SRCSonic.png/revision/latest/scale-to-width-down/1000?cb=20250228190417&path-prefix=es"
     },
@@ -235,7 +235,7 @@
         "name": "Pikachurina",
         "organism": "Mus musculus (Ratón)",
         "pdb_id": "7ZC9",
-        "dna_sig": "CCGATATTCCCG",
+        "dna_sig": "GCTAATACTTAG",
         "desc": "Ayuda a tus ojos a transmitir señales eléctricas al cerebro a la velocidad del rayo.",
         "image_url": "https://i.ebayimg.com/images/g/xLkAAOSwJGlgWOAB/s-l1600.webp"
     },
@@ -443,7 +443,7 @@
         "name": "Draculina",
         "organism": "Desmodus rotundus (Murciélago Vampiro)",
         "pdb_id": "1DCL",
-        "dna_sig": "GTTACTGATTTA",
+        "dna_sig": "TTTGAGCGTAAT",
         "desc": "Un potente anticoagulante en la saliva del vampiro que mantiene la sangre de la presa fluyendo.",
         "image_url": "https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7902/production/_130187903_gettyimages-1048242406.jpg.webp"
     },
