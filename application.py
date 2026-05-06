@@ -12,7 +12,7 @@ from diploma_generator import create_diploma_pdf
 # -----------------------------------------------------------------------------
 # 1. CONFIGURATION & ASSETS
 # -----------------------------------------------------------------------------
-st.set_page_config(page_title="Explorador BioDeco", layout="wide", page_icon="🧬")
+st.set_page_config(page_title="ProteinFinder", layout="wide", page_icon="🧬")
 
 # Custom CSS for the "Modern Art Deco" Aesthetic
 # We import 'Josefin Sans' for that geometric 1920s look
