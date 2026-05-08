@@ -1,5 +1,4 @@
 import json
-import random
 
 # New proteins to add
 new_proteins = [

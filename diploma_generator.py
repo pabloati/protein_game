@@ -23,15 +23,16 @@ def create_diploma_pdf(user_name, user_dna, match_data):
     pdf = FPDF(orientation="L", unit="mm", format="A4") # Landscape A4
     pdf.add_page()
     
-    # 1. Art Deco style golden border
-    pdf.set_draw_color(212, 175, 55) # Gold (#D4AF37)
-    pdf.set_line_width(2)
-    pdf.rect(10, 10, 277, 190)
-    pdf.rect(12, 12, 273, 186) # Double border!
+    # 1. Background image
+    bg_path = os.path.join(os.path.dirname(__file__), "resources", "Fondo.png")
+    pdf.image(bg_path, x=0, y=0, w=297, h=210)
+    
+    # Bajar la posición inicial del título
+    pdf.set_y(20)
     
     # 2. Main Title
     pdf.set_font("Helvetica", style="B", size=24)
-    pdf.set_text_color(44, 62, 80) # Dark Teal / Deco Navy
+    pdf.set_text_color(0, 0, 0) # Deep Black
     pdf.cell(0, 25, text="¿Qué proteína se esconde en tu nombre?", align="C", new_x="LMARGIN", new_y="NEXT")
     
     # 3. Presentation text
@@ -47,22 +48,22 @@ def create_diploma_pdf(user_name, user_dna, match_data):
     pdf.cell(0, 10, text="Se traduce en el siguiente ADN:", align="C", new_x="LMARGIN", new_y="NEXT")
     
     # ADN Sequence (Monospace)
-    user_dna_size = fit_text_line(pdf, user_dna, max_width=250, start_size=16, font="Courier")
-    pdf.set_font("Courier", size=user_dna_size)
+    user_dna_size = fit_text_line(pdf, user_dna, max_width=250, start_size=16, font="Courier", style="B")
+    pdf.set_font("Courier", style="B", size=user_dna_size)
     pdf.set_text_color(0, 128, 128) # Teal
     pdf.multi_cell(0, user_dna_size * 0.4, text=user_dna, align="C", new_x="LMARGIN", new_y="NEXT")
 
     # 4. Alignment Section (Full Width, under DNA)
     pdf.set_y(pdf.get_y() + 5)
     pdf.set_font("Helvetica", style="B", size=12)
-    pdf.set_text_color(44, 62, 80)
+    pdf.set_text_color(0, 0, 0)
     pdf.cell(0, 5, text="Alineamiento", align="C", new_x="LMARGIN", new_y="NEXT")
     
     align_text = match_data.get('alignment_str', 'Sin datos')
     longest_align_line = max(align_text.split('\n'), key=len) if align_text else ""
     align_font_size = fit_text_line(pdf, longest_align_line, max_width=250, start_size=12, font="Courier")
     pdf.set_font("Courier", size=align_font_size)
-    pdf.set_text_color(100, 100, 100) # Lighter grey for alignment
+    pdf.set_text_color(0, 0, 0) # Deep black for alignment
     pdf.multi_cell(0, align_font_size * 0.4, text=align_text, align="C", new_x="LMARGIN", new_y="NEXT")
     
     # 5. Two-Column Layout (Bottom Half)
@@ -75,7 +76,7 @@ def create_diploma_pdf(user_name, user_dna, match_data):
     # LEFT COLUMN: Protein Name, Description & PDB Image
     # ---------------------------------------------------------
     pdf.set_xy(col1_x, start_y)
-    pdf.set_text_color(44, 62, 80)
+    pdf.set_text_color(0, 0, 0)
     prot_name = match_data['name']
     
     # Fit the protein name dynamically
@@ -85,13 +86,17 @@ def create_diploma_pdf(user_name, user_dna, match_data):
     current_y = pdf.get_y() + 2
 
     # Description right below name, without title
-    pdf.set_xy(col1_x, current_y)
+    # Add a bit of padding so it stays away from the border while remaining centered in the column
+    desc_padding_x = col_width * 0.1
+    desc_width = col_width - (desc_padding_x * 2)
+    
+    pdf.set_xy(col1_x + desc_padding_x, current_y)
     desc_text = match_data.get('desc', 'Sin descripción')
     desc_len = len(desc_text)
     # We dynamically scale the fonts for the description to ensure it fits
     desc_font_size = 11 if desc_len < 150 else (10 if desc_len < 300 else 9)
     pdf.set_font("Helvetica", size=desc_font_size)
-    pdf.multi_cell(col_width, desc_font_size * 0.45, text=desc_text, align="C")
+    pdf.multi_cell(desc_width, desc_font_size * 0.45, text=desc_text, align="C")
     
     current_y = pdf.get_y() + 5
     
