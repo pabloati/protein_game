@@ -6,6 +6,7 @@ from Bio.Seq import Seq
 import random
 import hashlib
 import json
+import unicodedata
 import os
 from diploma_generator import create_diploma_pdf
 
@@ -138,20 +139,45 @@ def load_protein_db():
 
 PROTEIN_DB = load_protein_db()
 
+# European letters that have no accent to strip, mapped to their plain version
+SPECIAL_LETTERS = {'Ł': 'L', 'Ø': 'O', 'Đ': 'D', 'Æ': 'AE', 'Œ': 'OE', 'Þ': 'TH'}
+# Allowed in names but ignored when building the DNA (’ is the apostrophe phones type)
+NAME_SEPARATORS = " -'’"
+
+def normalize_name(name):
+    """Uppercases the name and removes accents (José -> JOSE), keeping the Ñ."""
+    normalized = ""
+    for char in unicodedata.normalize('NFC', name).upper():
+        if char != 'Ñ':
+            char = unicodedata.normalize('NFD', char)[0]  # base letter without its accent
+        normalized += SPECIAL_LETTERS.get(char, char)
+    return normalized
+
 def validate_name(name):
-    """Validates the input name to ensure it contains only alphabetic characters or spaces."""
-    if not all(char.isalpha() or char.isspace() for char in name):
-        st.error("Please enter a valid name containing only letters (A-Z) and spaces.")
+    """Validates that the name only has Latin letters (accents allowed), spaces, hyphens and apostrophes."""
+    normalized = normalize_name(name)
+    if not all(char in AA_TO_DNA or char in NAME_SEPARATORS for char in normalized) \
+            or not any(char in AA_TO_DNA for char in normalized):
+        st.error("Introduce un nombre válido: solo letras, espacios, guiones (-) y apóstrofos (').")
         return False
     return True
 
 def get_dna_from_name(name):
-    """Converts a name (string) into a DNA sequence using the map."""
-    clean_name = ''.join(filter(str.isalpha, name)).upper()
+    """Converts a name (string) into a DNA sequence using the map. Spaces, hyphens and apostrophes are ignored."""
+    clean_name = ''.join(char for char in normalize_name(name) if char in AA_TO_DNA)
     dna_seq = ""
     for char in clean_name:
-        dna_seq += AA_TO_DNA.get(char, 'NNN') # NNN if unknown
+        dna_seq += AA_TO_DNA[char]
     return dna_seq
+
+def get_diploma_name(name):
+    """Name as printed on the diploma. The PDF font only covers Latin-1, so other letters (Ł, Œ...) are normalized."""
+    name = name.replace('’', "'").upper()
+    try:
+        name.encode('latin-1')
+        return name
+    except UnicodeEncodeError:
+        return normalize_name(name)
 
 def find_best_match(query_dna):
     """
@@ -208,9 +234,9 @@ def find_best_match(query_dna):
         debug_log.append(f">>> SELECTED: {best_name}  (score={best_score:.2f})")
         debug_log.append("--- Winning alignment ---")
         debug_log.append(best_aln_str)
-        # Store alignment string in the protein dict for UI access
-        best_protein['alignment_str'] = best_aln_str
-        return best_protein, debug_log
+        # Return a copy with the alignment: PROTEIN_DB is shared by all visitors,
+        # so writing into it would leak this alignment into other users' results
+        return {**best_protein, 'alignment_str': best_aln_str}, debug_log
 
     # Deterministic random fallback
     seed = int(hashlib.sha256(query_dna.encode()).hexdigest(), 16)
@@ -222,9 +248,8 @@ def find_best_match(query_dna):
     debug_log.append(
         f">>> No score > 0.  Deterministic random fallback -> {fallback['name']}"
     )
-    # Add a dummy alignment string or explanation for fallback
-    fallback['alignment_str'] = "No alignment significant found.\nRandom match selected."
-    return fallback, debug_log
+    # Add a dummy alignment string or explanation for fallback (on a copy, see above)
+    return {**fallback, 'alignment_str': "No alignment significant found.\nRandom match selected."}, debug_log
 
 # -----------------------------------------------------------------------------
 # 3. UI LAYOUT
@@ -340,7 +365,7 @@ with col2:
                         if organism_name == "Homo sapiens (Humano)" and not match['name'] == "Sonic Hedgehog":
                             possible_images = ["https://upload.wikimedia.org/wikipedia/commons/2/2e/Baby.jpg",
                                                "https://divulgacioncientifica.uca.es/wp-content/uploads/2017/05/culturacientifica2.jpg",
-                                               "https://www.unir.net/wp-content/uploads/2024/08/Caracteristicas-de-los-derechos-humanos-las-conoces1.webp"]
+                                               "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Da_Vinci_Vitruve_Luc_Viatour.jpg/960px-Da_Vinci_Vitruve_Luc_Viatour.jpg"]
                             img_to_show = random.choice(possible_images)
                         else: 
                             img_to_show = img_source
@@ -375,7 +400,7 @@ if st.session_state.get('search_done'):
         # or generate them via a quick callback. st.download_button handles this easily.
         with st.spinner("Preparando diploma..."):
             pdf_data = create_diploma_pdf(
-                user_name=name_input, 
+                user_name=get_diploma_name(name_input),
                 user_dna=st.session_state['dna'], 
                 match_data=st.session_state['match']
             )

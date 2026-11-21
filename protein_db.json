@@ -117,7 +117,7 @@
         "pdb_id": "1U19",
         "dna_sig": "GCGATGTCTGTGACCTCTGCTAGT",
         "desc": "Un sensor de luz súper sensible que permite a los gatos ver en la oscuridad.",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/640px-Cat03.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/500px-Cat03.jpg"
     },
     {
         "name": "Caseína",
@@ -125,7 +125,7 @@
         "pdb_id": "1BEH",
         "dna_sig": "GCTAATGCTTGCGAGAATGAGTCTG",
         "desc": "La proteína principal de la leche, esencial para hacer queso.",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Cow_female_black_white.jpg/640px-Cow_female_black_white.jpg"
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Cow_female_black_white.jpg/500px-Cow_female_black_white.jpg"
     },
     {
         "name": "Amilasa",
@@ -221,7 +221,7 @@
         "pdb_id": "1VHH",
         "dna_sig": "ACCGCTAATATTATTAGTTTATAG",
         "desc": "Llamada así por el videojuego, esta proteína instruye a tus dedos para crecer en el lugar correcto.",
-        "image_url": "https://static.wikia.nocookie.net/sonic/images/1/10/SRCSonic.png/revision/latest/scale-to-width-down/1000?cb=20250228190417&path-prefix=es"
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/f/f4/Sonic_modern_and_classic_designs.png"
     },
     {
         "name": "Pikachurina",
